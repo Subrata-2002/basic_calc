@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./cal.js"></script>
+</head>
+
+<body>
+   <form name="f1">
+       <table border="1" rules="none" align="center" cellspacing="0" cellpadding="10">
+           <tr>
+               <td colspan="4" align="center"><input type="text" name="t1" id="result" readonly></td>
+           </tr>
+           <tr>
+               <td><input type="button" class="c1" value="9" onclick="fun('9')"></td>
+               <td><input type="button" class="c1" value="8" onclick="fun('8')"></td>
+               <td><input type="button" class="c1" value="7" onclick="fun('7')"></td>
+               <td><input type="button" class="c1" value="+" onclick="calc('+')"></td>
+           </tr>
+           <tr>
+            <td><input type="button" class="c1" value="6" onclick="fun('6')"></td>
+            <td><input type="button" class="c1" value="5" onclick="fun('5')"></td>
+            <td><input type="button" class="c1" value="4" onclick="fun('4')"></td>
+            <td><input type="button" class="c1" value="-" onclick="calc('-')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="c1" value="3" onclick="fun('3')"></td>
+            <td><input type="button" class="c1" value="2" onclick="fun('2')"></td>
+            <td><input type="button" class="c1" value="1" onclick="fun('1')"></td>
+            <td><input type="button" class="c1" value="*" onclick="calc('*')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="c1" value="0" onclick="fun('0')"></td>
+            <td><input type="button" class="c1" value="." onclick="dot()"></td>
+            <td><input type="button" class="c1" value="c" onclick="clearInput()"></td>
+            <td><input type="button" class="c1" value="/" onclick="calc('/')"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="button" class="c2" value="=" onclick="getResult()"></td>
+        </tr>
+       </table>
+   </form>
+</body>
+</html>
